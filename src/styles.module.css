@@ -1,9 +1,79 @@
 /* add css module styles here (optional) */
+:root {
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --grayColor: #999;
+  --lightGray: rgb(229, 228, 228);
+  --blueColor: #1790ff;
+  --hoverBlue: #076cca;
+  --redColor: #f44336;
+  --hoverRed: #ce2317;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
+.button {
+  min-height: 30px;
+  min-width: 40px;
+  color: var(--blackColor);
+  border: none;
+  border-radius: 3px;
+  position: relative;
+  padding: 12px 30px;
+  margin: 0.3125rem 1px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0;
   text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--lightGray);
+}
+
+.primary {
+  background-color: var(--blueColor);
+  color: var(--whiteColor);
+}
+
+.primary:hover {
+  background-color: var(--hoverBlue);
+}
+
+.dashed {
+  background-color: transparent;
+  border: var(--grayColor) dashed;
+}
+
+.dashed:hover {
+  background-color: var(--grayColor);
+  color: var(--whiteColor);
+}
+
+.link {
+  color: var(--blueColor);
+  background-color: transparent;
+}
+
+.link:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.text {
+  background-color: transparent;
+}
+
+.text:hover {
+  background-color: var(--lightGray);
+}
+
+.danger {
+  background-color: var(--redColor);
+  color: var(--whiteColor);
+}
+
+.danger:hover {
+  background-color: var(--hoverRed);
 }
