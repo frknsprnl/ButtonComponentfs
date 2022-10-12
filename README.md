@@ -6,7 +6,7 @@
 
 ## Install
 
-'If you are using @react17 or newer versions, try to install with --legacy-peer-deps'
+**If you are using @react17 or newer versions, try to install with --legacy-peer-deps**
 ```bash
 npm install --save buttoncomponentfs --legacy-peer-deps
 ```
