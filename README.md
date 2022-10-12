@@ -6,21 +6,33 @@
 
 ## Install
 
+'If you are using @react17 or newer versions, try to install with --legacy-peer-deps'
 ```bash
-npm install --save buttoncomponentfs
+npm install --save buttoncomponentfs --legacy-peer-deps
 ```
+
+<div align="center">
+<img src="./Buttons.png" alt="button image" width='300'  >
+</div>
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'buttoncomponentfs'
+import Button from 'buttoncomponentfs'
 import 'buttoncomponentfs/dist/index.css'
 
-class Example extends Component {
+class Example extends Button {
   render() {
-    return <MyComponent />
+    return (
+      <Button text="click me" type="primary" />
+      <Button text="click me" />
+      <Button text="click me" type="dashed" />
+      <Button text="click me" type="text" />
+      <Button text="click me" type="link" />
+      <Button text="click me" type="danger" />
+    )
   }
 }
 ```
